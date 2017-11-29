@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Whateatgo_rcmds</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>select</h1>
+<br>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>구분</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <fieldset>
+                  <legend>Selecting elements</legend>
+                  <p>
+                     <label>Select list</label>
+                     <select id = "myList">
+                       <option value = "1">one</option>
+                       <option value = "2">two</option>
+                       <option value = "3">three</option>
+                       <option value = "4">four</option>
+                     </select>
+                     
+                  </p>
+                </fieldset>
+                <form action = "#" method="post">
+                    <button name="choice" value="#">선택</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>가격</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div data-obj-id="editbox" data-obj-type="element" data-text-editable="true" class="">
+                    <input type="text" data-min-width="60" data-min-height="30" data-text-content="true" value="0" style="color: rgb(94, 94, 94);" class="">
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>입맛</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <form action = "#" method="post">
+                    <label><input type ="checkbox" name="mobile" value="1" checked> 매운 </label>
+                    <label><input type ="checkbox" name="mobile" value="2"> 느끼 </label >
+                    <label><input type="checkbox" name="mobile" value="3" > 담백 </label >
+               </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td><B>식감</B></td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <form action = "#" method="post">
+                    <label><input type ="checkbox" name="mobile" value="1" checked> 고기 </label>
+                    <label><input type ="checkbox" name="mobile" value="2"> 면 </label >
+                    <label><input type ="checkbox" name="mobile" value="2"> 밥 </label >
+                    <label><input type ="checkbox" name="mobile" value="2"> 음료 </label >
+                    <label><input type ="checkbox" name="mobile" value="2"> 기타 </label >
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
