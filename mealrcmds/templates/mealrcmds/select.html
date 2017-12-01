@@ -12,6 +12,8 @@
 <div class="container">
 <h1>select</h1>
 <br>
+<form action = "/result" method="post">
+    {% csrf_token %}
     <table class="table table-striped">
         <thead>
         <tr>
@@ -22,21 +24,18 @@
         <tr>
             <td>
                 <fieldset>
-                  <legend>Selecting elements</legend>
+                  <legend>{{region}}</legend>
+                  <!--
                   <p>
                      <label>Select list</label>
-                     <select id = "myList">
-                       <option value = "1">one</option>
-                       <option value = "2">two</option>
-                       <option value = "3">three</option>
-                       <option value = "4">four</option>
+                     <select id = "regionList">
+                        {% for candidate in candidates %}
+                        <option value = "1">{{candidate.name}}</option>
+                        {% endfor %}
                      </select>
-                     
                   </p>
+              -->
                 </fieldset>
-                <form action = "#" method="post">
-                    <button name="choice" value="#">선택</button>
-                </form>
             </td>
         </tr>
         </tbody>
@@ -94,6 +93,9 @@
             </td>
         </tr>
         </tbody>
+
     </table>
+    <button name="choice" value="#">선택</button>
+    </form>
 </div>
 </body>

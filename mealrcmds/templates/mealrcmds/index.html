@@ -21,36 +21,41 @@
         <tbody>
         <tr>
             <td align=center>
-                <form action = "#" method="post">
-                    <button name="choice" value="#">한식</button>
+                <form action = "/select" method="post">
+                {% csrf_token %}
+                    <button name="choice" value="kor">한식</button>
                 </form>
             </td>
         </tr>
         <tr>
             <td align=center>
-                <form action = "#" method="post">
-                    <button name="choice" value="#">중식</button>
+                <form action = "/select" method="post">
+                {% csrf_token %}
+                    <button name="choice" value="chn">중식</button>
                 </form>
             </td>
         </tr>
         <tr>
             <td align=center>
-                <form action = "#" method="post">
-                    <button name="choice" value="#">양식</button>
+                <form action = "/select" method="post">
+                {% csrf_token %}
+                    <button name="choice" value="etc">양식</button>
                 </form>
             </td>
         </tr>
         <tr>
             <td align=center>
-                <form action = "#" method="post">
-                    <button name="choice" value="#">일식</button>
+                <form action = "/select" method="post">
+                {% csrf_token %}
+                    <button name="choice" value="jpn">일식</button>
                 </form>
             </td>
         </tr>
         <tr>
             <td align=center>
-                <form action = "#" method="post">
-                    <button name="choice" value="#">아무거나</button>
+                <form action = "/select" method="post">
+                {% csrf_token %}
+                    <button name="choice" value="random">아무거나</button>
                 </form>
             </td>
         </tr>     
